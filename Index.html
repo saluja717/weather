@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+	<meta charset="utf-8" name="viewport" content="width=device-width initial-scale=1.0">
+	<style type="text/css">
+		body
+		{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+			background-color: lightgrey;
+		}
+		.main{
+			width: 100%;
+			height: 100%;
+			display: grid;
+			grid-template-rows:1fr 1fr min-content 1fr;
+			padding: 0;
+			grid-gap: 100px;
+			margin: 0;
+		     }
+       .head
+       {
+       	  background-color: yellow;
+       	  text-align: center; 
+       }
+       #head1
+       {
+         position: relative;
+         margin-top:40px;
+         text-align:center;      	 
+       }
+       .menu
+       {
+       	  background-color: green;
+       }
+       #tab
+       {
+       	position: relative;
+        border-collapse: collapse;
+        border-color: black;
+        padding:0 50% 0 35%;
+       }
+       table caption
+       {
+       	 margin-bottom: 10px;
+       	 font-size: 20px;
+       }
+       table tr td
+       {
+       	 position: relative;
+       	 padding: 10px;
+
+         color: red;
+       }
+       table tr td:hover
+       {
+       	 background-color: pink;
+       }
+
+     
+       #exam table tr td a
+       {
+          text-decoration-line: none;
+       }
+
+       #exam table 
+       {
+           margin-top: 30px;
+           position: relative;
+           left: 30%;
+       }
+
+       .branch
+       {
+          background-color: grey;
+       }
+       .footer
+       {
+          background-color: orange;
+       }
+       #foot
+       {
+       	position: relative;
+       	margin-top: 20px;
+       	text-align: center;
+       }
+
+
+
+
+     @media screen and (max-width: 500px)
+     {
+        .main{
+        	grid-gap: 100px;
+        }
+        #tab
+        {
+        	padding:0px 80px;
+        }
+        #exam table
+        {
+        	left: 7%;
+        }
+     }
+
+
+	</style>
+</head>
+<body>
+   <div class="main">
+   <div class="head"><div id="head1"><b><i>SHRI SHANKRACHARYA INSTITUE OF 
+    PROFESSIONAL MANAGEMENT AND TECHNOLOGY RAIPUR</i></b></div></div>
+
+
+
+     <div class="branch">
+    
+     	<div id="exam">
+     
+        <table>
+       
+        	<tr>
+        		<td><a href="#">HOME</a></td>
+        		
+        		<td><a href="#">EXAM</a></td>
+
+        		<td><a href="#">RESULT</a></td>
+
+        		<td><a href="#">CERTIFICATE</a></td>
+
+        		<td><a href="#">LOGOUT</a></td>
+
+        	</tr>	
+
+        </table>
+
+     </div>
+
+    </div>
+
+ 
+
+
+   <div class="menu"><div id="tab"><table border="1">  <caption><i>CHOOSE BRANCH</i></caption>
+                              <tr>
+                              	<td>CSE</td>
+                              	<td>ET&T</td>
+                              	<td>MECH</td>
+                              	<td>EEE</td>
+                              	<td>CIVIL</td>
+                              </tr>
+   </table>
+   </div>
+   </div>
+
+
+   <div class="footer">
+   <div id="foot">&copy;COPYRIGHT2021</div> 
+   </div>
+   </div>
+
+</body>
+</html>

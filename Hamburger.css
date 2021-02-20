@@ -1,0 +1,331 @@
+    *
+      {
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+      }
+    	
+  @media  screen and (max-width: 500px)
+  {
+       #menu
+       {
+       	display: none;
+       	height: 100%;
+       	width: 200px;
+       	background-color: lightgrey;
+       	position: absolute;
+       }
+
+       #inside_ul li
+       {
+
+          list-style-type: none;
+          color: maroon;
+          padding: 20px;
+          margin-top: 15px;
+          left: 0;
+       }
+       #inside_ul li:hover
+       {
+       	 background-color: green;
+       } 
+      #footer
+      {
+        position: absolute;
+      	text-align: center;
+      	background-color: red;
+      	height: 30px;
+        bottom: 50px;
+        width: 100%;
+        display: block;
+      	margin-top: 15px;
+      	
+      }
+      #foot_p
+      {
+      	display: block;
+      }
+      #X
+      {   
+           display:block;
+      	   text-align: center;
+      }
+      #btn img
+      {
+      	width: 30px;
+      	height: 30px;
+      	border-radius: 50% 50%;
+
+      }
+      #btn
+      { 
+        display: inline-block;
+      	border: 0;
+      	border-radius: 50% 50%;
+      	
+
+      }
+      #X button
+      {
+      	border: 0;
+      	background-color:white;
+      	font-size: 30px;
+      }
+      #header
+      {
+      	position: absolute;
+        display: block;
+      	background-color: grey;
+      	width: 100%;
+      	height: 50px;
+      }
+      #header #btn
+      {
+      	float: left;
+      }
+      #head
+      {
+      	text-align: center;
+      	letter-spacing: 2px;
+      	margin-top: 10px;
+      	color: white;
+      
+      }
+      #header #btn 
+      {
+      	margin-top: 5px;
+      }
+
+
+
+  #card
+{
+  top: 80px;
+  position: relative;
+  transform: translate(50%,50%);
+  right: 30%;
+}
+#inside-card
+{
+  position: absolute;
+   width: 300px;
+  height: 430px;
+
+   border:5px solid green;
+   outline-color: black;
+   outline-width: 2px;
+   outline-offset: 3px;
+   outline-style: dashed;
+   border-radius: 10px 10px;
+}
+#inside-card p
+{
+   text-align: center;
+   letter-spacing: 10px;
+   font-style: italic;
+   font-weight: bolder;
+   color: white;
+}
+#inside-card img
+{
+  position: relative;
+  left: 90px;
+  top: 30px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50% 50%;
+}
+#inside-card #input
+{
+   
+   position: relative;
+   text-align: center;
+   letter-spacing: 1px;
+   margin-bottom: 40px;
+   font-style: italic;
+   font-weight: bolder;
+}
+#data
+{
+  position: relative;
+  top: 40px;
+}
+#opacity
+{
+  opacity: 0.50;
+}
+.inp
+{
+  position: relative;
+  color: green;
+  left: 20%;
+  height: 30px;
+  opacity: 0.50; 
+  font-weight: bolder;
+}
+#input
+{
+  font-weight: bolder;
+  font-size: 15px;
+  color: white;
+}
+.btn
+{
+  position: relative;
+  margin-top:20px;
+  left: 40%;
+  display: block;
+  width: 50px;
+  height: 30px;
+  border-radius: 10px 10px;
+}
+  }
+
+
+@media screen and (min-width:501px)
+{
+#btn
+{
+  display: none;
+}
+#X
+{
+  display: none;
+}
+#header
+{
+  background-color: grey;
+  height: 60px;
+  width: 100%;
+
+}
+#header #head
+{
+  margin-top: 20px;
+  display: block;
+  text-align: center;
+  left: 40%;
+  position: absolute;
+}
+
+
+#menu
+{
+  position: relative;
+  top: 40px;
+  background-color: lightgrey;
+  height: 40px;
+}
+#inside_ul li
+{
+  margin-top: 10px;
+  display: inline-block;
+  padding-right: 40px;
+}
+#inside_ul
+{
+  position: relative;
+  left: 25%;
+}
+#inside_ul li:hover
+{
+  padding: 10px 0px;
+  margin-top: 0;
+  margin-right: 40px;
+  background-color: green;
+}
+
+#footer
+{
+   position: absolute;
+   width: 100%;
+   background-color: red;
+   text-align: center;
+   height: 20px;
+   bottom:0px;
+}
+
+#card
+{
+  top: 80px;
+  position: relative;
+  transform: translate(50%,50%);
+  right: 15%;
+}
+#inside-card
+{
+  position: absolute;
+   width: 300px;
+  height: 430px;
+
+   border:5px solid green;
+   outline-color: black;
+   outline-width: 2px;
+   outline-offset: 3px;
+   outline-style: dashed;
+   border-radius: 10px 10px;
+}
+#inside-card p
+{
+   text-align: center;
+   letter-spacing: 10px;
+   font-style: italic;
+   font-weight: bolder;
+   color: white;
+}
+#inside-card img
+{
+  position: relative;
+  left: 90px;
+  top: 30px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50% 50%;
+}
+#inside-card #input
+{
+   
+   position: relative;
+   text-align: center;
+   letter-spacing: 1px;
+   margin-bottom: 40px;
+   font-style: italic;
+   font-weight: bolder;
+}
+#data
+{
+  position: relative;
+  top: 40px;
+}
+#opacity
+{
+  opacity: 0.50;
+}
+.inp
+{
+  position: relative;
+  color: green;
+  left: 20%;
+  height: 30px;
+  opacity: 0.50; 
+  font-weight: bolder;
+}
+#input
+{
+  font-weight: bolder;
+  font-size: 15px;
+  color: white;
+}
+.btn
+{
+  position: relative;
+  margin-top:20px;
+  left: 40%;
+  display: block;
+  width: 50px;
+  height: 30px;
+  border-radius: 10px 10px;
+}
+
+
+}

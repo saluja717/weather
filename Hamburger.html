@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hamburger</title>
+    <link rel="stylesheet" type="text/css" href="Hamburger.css">
+    <meta name="viewport" content="width=device-width , initial-scale= 1.0">
+</head>
+<body>
+  
+  <div id="header">
+  <button id="btn" onclick="fun()"><img src="ham.png"></img></button>
+  	<p id="head">WELCOME TO THE WORLD</p>
+  </div>
+
+  <div id="menu">
+  	<li id="X"><button onclick="show()">X</button></li>
+  	<ul id="inside_ul">
+  	    <li>HOME</li>
+  	   	<li>ABOUT US</li>
+  	   	<li>CONTACT</li>
+  	   	<li>HELP</li>
+  	    <li>SIGN OUT</li>
+  	</ul>
+    </div>
+
+    <div id=card>
+
+      <div id="inside-card">
+          
+        <p>WEATHER</p>
+        <img id="opacity" src="Sun.png"/>
+        <div id="data">
+        <p class="city" id="input"></p>
+        <p class="temp" id="input"></p>
+        <p class="humi" id="input"></p>
+        <input  class="inp" type="text" name="city" placeholder="Enter the name of city"/>
+        <button class="btn" value="submit">Submit</button>
+      </div>
+        
+     </div>
+
+    </div>
+
+  	<footer id="footer">
+  		<p id="foot_p"></p>;
+  	</footer>
+</body>
+
+   <script type="text/javascript" src="main.js"></script>
+
+</html>
