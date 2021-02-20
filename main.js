@@ -58,7 +58,7 @@
    	  }
 
       let date = new Date().getFullYear();
-   	  document.getElementById('footer').innerHTML=`&copy; CopyRight ${date}`;
+   	  document.getElementById('foot_p').innerHTML=`&copy; CopyRight ${date}`;
 
    
    var btn = document.querySelector('.btn');
