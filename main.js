@@ -1,7 +1,7 @@
    
 
    var b;
-    b =prompt("Hii Please enter your city name");
+    b =prompt("Hii Please enter your city name","Do not Hit the cancel Button");
     
     var c= b.length;
 
