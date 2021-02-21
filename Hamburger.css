@@ -100,6 +100,7 @@
    width: 100%;
   height: 500px;
   background-size: cover;
+ 
   background-repeat: no-repeat;
     transform: translate(60% 50%);
   border:5px solid green;
@@ -119,7 +120,7 @@
    font-weight: bolder;
    color: white;
 }
-/*#inside-card img
+#inside-card img
 {
   position: relative;
   left: auto;
@@ -128,7 +129,7 @@
   width: 100px;
   height: 100px;
   border-radius: 50% 50%;
-}*/
+}
 #inside-card #input
 {
    
@@ -146,7 +147,7 @@
 }
 #opacity
 {
-  opacity: 0.50;
+  filter: brightness(50%);
 }
 .inp
 {
@@ -230,46 +231,79 @@
   background-color: green;
 }
 
+
+
 #card
 {
-  top: 80px;
+  top: 40px;
   position: relative;
   transform: translate(50%,50%);
   right: 15%;
 }
 #inside-card
 {
-  position: absolute;
-   width: 300px;
-  height: 430px;
-
-   border:5px solid green;
+  z-index: 50;
+     border:5px solid green;
    outline-color: black;
    outline-width: 2px;
    outline-offset: 3px;
    outline-style: dashed;
    border-radius: 10px 10px;
+   width: 300px;
+   height: 430px;
+    position: absolute;
+}
+#inside-card
+{ 
+    width: 300px;
+   height: 430px;
+   position: absolute;
+   z-index: 5;
 }
 #inside-card p
 {
+  top: 10px;
    text-align: center;
    letter-spacing: 10px;
+   margin-bottom: 20px;
    font-style: italic;
    font-weight: bolder;
    color: white;
+   animation-name: sample;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
 }
-#inside-card img
+@keyframes sample
 {
+  0%{ color: black;}
+  20%{color: darkred;}
+  40%{color: darkgreen;}
+  60%{color: goldenrod;}
+  80%{color: yellow;}
+  100%{color: white;}
+}
+#opacity
+{
+  left: 30%;
   position: relative;
-  left: 90px;
-  top: 30px;
+  border: .5px solid grey;
   width: 100px;
   height: 100px;
   border-radius: 50% 50%;
+  animation-name: sample1;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes sample1
+{
+   0%{background-color: lightgreen;}
+   100%{background-color: lightpink;}
 }
 #inside-card #input
 {
-   
+  
    position: relative;
    text-align: center;
    letter-spacing: 1px;
@@ -280,12 +314,9 @@
 #data
 {
   position: relative;
-  top: 40px;
+  top: 30px;
 }
-#opacity
-{
-  opacity: 0.50;
-}
+
 .inp
 {
   position: relative;
@@ -293,6 +324,7 @@
   left: 20%;
   height: 30px;
   opacity: 0.50; 
+
   font-weight: bolder;
 }
 #input
@@ -306,6 +338,7 @@
   position: relative;
   margin-top:20px;
   left: 40%;
+  
   display: block;
   width: 50px;
   height: 30px;
