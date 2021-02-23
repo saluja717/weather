@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz</title>
+</head>
+<body>
+
+    <div id="main">
+    	<div id="sub">
+    		<p id="Question"></p>
+    		<p id="A" onclick="choose_A()"></p>
+    		<p id="B" onclick="choose_B()"></p>
+    		<p id="C" onclick="choose_C()"></p>
+    		<p id="D" onclick="choose_D()"></p>
+    		<div>
+    			<button>Sumbit</button>
+    		</div>
+    		<div>
+    			<button>PREV</button>
+    		</div>
+    		<div>
+    			<button>Next</button>
+    		</div>
+    	</div>
+    </div>
+</body>
+<script type="text/javascript">
+
+	var i=0;
+	var docum = [ {
+		 question:"What is mango",
+		 A:"fruit",
+		 B:"vegitable",
+		 C:"both",
+		 D:"none",
+		 right:"A"
+	} 
+
+      {question:"What is onion",
+		 A:"fruit",
+		 B:"vegitable",
+		 C:"both",
+		 D:"none",
+		 right:"B"}
+	  ];
+
+ var b= docum.filter((val,ind)=>{
+        return (ind===i);
+ });
+
+ doucment.getElementById('Question').innerHTML=b['question'];
+ doucment.getElementById('A').innerHTML=b['A'];
+ doucment.getElementById('B').innerHTML=b['B'];
+ doucment.getElementById('C').innerHTML=b['C'];
+ doucment.getElementById('D').innerHTML=b['D'];
+
+  const choose_A = ()=>{};
+  const choose_B = ()=>{};
+  const choose_C = ()=>{};
+  const choose_D = ()=>{};
+
+
+
+</script>
+</html>

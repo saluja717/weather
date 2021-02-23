@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Captche</title>
+
+    <style type="text/css">
+    	body
+    	{
+    		background-image: repeating-radial-gradient(circle,red,green,blue);
+    	}
+    	#main
+    	{
+    		position: absolute;
+    		left: 25%;
+    		width: 600px;
+    		height: 600px;
+    		transform: translate(50% 50%);
+    		background-color: transparent;
+    	}
+    	#main input
+    	{
+    		position: relative;
+    		left: 25%;
+    		top: 40%;
+    		width: 250px;
+    		margin:10px 0;
+    		display: block;
+    	}
+    	#main button
+    	{
+    		position: relative;
+    		left: 40%;
+    		top: 40%;
+    		margin:10px 0;
+    		display: block;
+    	}
+    	input
+    	{
+    		border: 0;
+    		height: 30px;
+    	}
+    	button
+    	{
+            height: 30px;
+    	}
+    	#cen
+    	{
+    		position: relative;
+
+    	}
+    	#check
+    	{
+    		text-align: center;
+    	}
+    	input:focus
+    	{
+    		background-color: pink;
+    	}
+    	#inp
+    	{
+    		background-image:linear-gradient(to right,red,green);
+    		text-align: center;
+    		color: linear-gradient(to right,red,green);
+    	}
+    	
+    </style>
+
+</head>
+<body onload="fun()">
+  <div id="main">
+  	<input type="text" id="inp"  disabled />
+  	<button onclick="refresh()" id="cen">REFRESH</button>
+  	<input type="text" id="check" placeholder="Enter The Captche">
+  	<button onclick="check()">SUBMIT</button>
+  </div>
+</body>
+<script type="text/javascript">
+	var variable=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','1','2','3','4','5','6','7','8','9','0'];
+
+     const refresh = ()=>
+     {
+         document.getElementById('inp').value=variable[Math.floor(Math.random(
+         	 )*62)];
+         document.getElementById('inp').style.fontSize="25px";
+         document.getElementById('inp').style.color="white";
+       
+         document.getElementById('inp').value=inp.value+variable[Math.floor(Math.random()*62)];
+         document.getElementById('inp').value=inp.value+variable[Math.floor(Math.random()*62)];
+         document.getElementById('inp').value=inp.value+variable[Math.floor(Math.random()*62)];
+         document.getElementById('inp').value=inp.value+variable[Math.floor(Math.random()*62)];
+         document.getElementById('inp').value=inp.value+variable[Math.floor(Math.random()*62)];
+     }
+     const fun = ()=>
+     {
+     	refresh();
+     }
+
+     const check = ()=>
+     {
+     	var b= document.getElementById('check').value;
+     	var c= document.getElementById('inp').value;
+     	if(b!==c)
+     	{
+            alert("Invalid Captche");
+     	}
+     }
+
+</script>
+</html>
