@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
 	<title>Captche</title>
@@ -106,4 +106,84 @@
      }
 
 </script>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image</title>
+	<style type="text/css">
+        *
+        {
+        	margin: 0;
+        	padding:0;
+            box-sizing: border-box;
+        }
+        #set
+        {
+        	position: relative;
+        	margin: 10px auto;
+            width: 400px;
+            height: 400px;
+            
+
+        }
+        img
+        {
+        	position: absolute;
+        	width: 400px;
+        	height: 400px;
+        	filter: blur(1px);
+        }
+        #spa
+        {
+           width: 400px;
+        	height: 400px;
+        	position: absolute; 
+            background: rgb(218,30,253,0.20);
+            top: -999px; 
+            transition-property:all;
+        	transition-duration: 1s;
+        	transition-timing-function:linear;
+        } 
+        #spa h1 
+        {
+           position: relative;
+           border-bottom: 1px solid black;
+           margin:25% auto 0 auto;
+           margin-bottom: 30px;
+        	text-align: center;
+        }
+        #spa p
+        {
+        	position: relative;
+        	text-align: center;
+       }
+
+     #set:hover #spa
+     {
+     	    top: 0px;
+     } 
+     #set:hover
+     {
+     	background-color: blue;
+     	z-index: 1;
+     }
+   
+	</style>
+</head>
+<body>
+  
+        <div id="set">
+  		<img src="login.jpg" id="image"/>
+		  <div id="spa">
+			<h1>Welcome To The World</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	        </p>
+	    </div>
+	    </div> 
+</body>
 </html>
